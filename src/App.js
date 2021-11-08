@@ -7,12 +7,15 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import TextField from "@mui/material/TextField";
+// import { createTheme, adaptV4Theme } from "@mui/material/styles";
+// import { ThemeProvider, makeStyles } from "@mui/styles";
 import { ThemeProvider, createMuiTheme, makeStyles } from "@mui/styles";
 // import { makeStyles } from "@mui/material/styles";
 import React from "react";
 
 const theme = createMuiTheme();
-const useStyles = makeStyles( {
+// const theme = createTheme(adaptV4Theme({}));
+const useStyles = makeStyles({
   root: {
     background: "linear-gradiant(45deg, #333, #999)",
     border: 0,
@@ -24,7 +27,7 @@ const useStyles = makeStyles( {
 
 function ButtonStyled() {
   const classes = useStyles();
-  return <ThemeProvider theme={theme}></ThemeProvider>
+  // return <ThemeProvider theme={theme}></ThemeProvider>
   // return <Button className={classes.root}>Test Styled Button</Button>;
 }
 
